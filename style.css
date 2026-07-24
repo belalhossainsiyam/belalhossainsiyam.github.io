@@ -1,91 +1,114 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Belal Hossain Siyam | Official Website</title>
 
-<link rel="stylesheet" href="style.css">
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
 
-</head>
-<body>
+body{
+  margin:0;
+  font-family:Arial,sans-serif;
+  background:#07130f;
+  color:#f7f4e8;
+  line-height:1.7;
+}
 
-<header class="hero">
-<div class="overlay">
+.hero{
+  min-height:100vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  padding:40px 20px;
+  background:linear-gradient(135deg,#07130f,#123b2b);
+}
 
-<h1>Belal Hossain Siyam</h1>
+.overlay{
+  width:100%;
+  max-width:850px;
+  padding:50px 25px;
+  border:1px solid rgba(255,255,255,.15);
+  border-radius:28px;
+  background:rgba(0,0,0,.28);
+  box-shadow:0 20px 60px rgba(0,0,0,.35);
+}
 
-<p>Islamic Nasheed Artist • Professional Content Creator</p>
+h1{
+  margin:0 0 12px;
+  font-size:clamp(42px,8vw,78px);
+  line-height:1.05;
+  color:#fff;
+}
 
-<a href="#about" class="btn">About Me</a>
+h2{
+  margin-bottom:25px;
+  font-size:32px;
+  color:#d9b968;
+}
 
-</div>
-</header>
+.hero p{
+  font-size:20px;
+  color:#e9e5d8;
+}
 
-<section id="about">
+.btn{
+  display:inline-block;
+  margin-top:20px;
+  padding:14px 28px;
+  border-radius:999px;
+  background:#d9b968;
+  color:#07130f;
+  text-decoration:none;
+  font-weight:bold;
+}
 
-<h2>About Me</h2>
+section{
+  max-width:1000px;
+  margin:auto;
+  padding:75px 22px;
+  text-align:center;
+}
 
-<p>
-Assalamu Alaikum.
-I'm Belal Hossain Siyam,
-an Islamic Nasheed Artist,
-Professional Content Creator,
-Digital Marketing Specialist
-and Hafizul Quran.
-</p>
+section:nth-of-type(even){
+  background:#0d2119;
+  max-width:none;
+}
 
-</section>
+section p{
+  max-width:720px;
+  margin:auto;
+  font-size:18px;
+}
 
-<section>
+ul{
+  max-width:650px;
+  margin:25px auto;
+  padding:0;
+  list-style:none;
+  display:grid;
+  gap:12px;
+}
 
-<h2>Featured Nasheeds</h2>
+li{
+  padding:15px;
+  background:#102c21;
+  border:1px solid rgba(217,185,104,.3);
+  border-radius:14px;
+}
 
-<ul>
+section a{
+  color:#d9b968;
+  font-weight:bold;
+  text-decoration:none;
+}
 
-<li>Dil Pe Kalme Ki</li>
+footer{
+  padding:30px 20px;
+  text-align:center;
+  background:#030806;
+  color:#aaa;
+}
 
-<li>Nurun Ala Nur</li>
-
-<li>Modinar Dhulabali</li>
-
-<li>Tomar Preme Bekul</li>
-
-<li>Ekdin Sob Thik Hobe</li>
-
-<li>Tomay Cawa</li>
-
-<li>Provur Premer Gunogan</li>
-
-<li>O Pakhi</li>
-
-<li>Qalbi Muhammad</li>
-
-<li>Wo Shehre Mohabbat</li>
-
-</ul>
-
-</section>
-
-<section>
-
-<h2>Follow Me</h2>
-
-<a href="https://youtube.com/@belalhossainsiyam">YouTube</a><br><br>
-
-<a href="https://www.facebook.com/share/1BVjTQ1JkN/">Facebook</a><br><br>
-
-<a href="https://www.instagram.com/belalhossainsiyam">Instagram</a><br><br>
-
-<a href="https://www.tiktok.com/@belalhosainsiyam">TikTok</a>
-
-</section>
-
-<footer>
-
-<p>© Belal Hossain Siyam</p>
-
-</footer>
-
-</body>
-</html>
+@media(max-width:600px){
+  .hero{min-height:85vh}
+  .overlay{padding:35px 18px}
+  h2{font-size:27px}
+  section{padding:55px 18px}
+}
